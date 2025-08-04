@@ -1,0 +1,29 @@
+[project]
+name = "thesis"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Anand Raj",email = "anand.raj@1mg.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.30.0",
+    "kagglehub>=0.3.12",
+    "matplotlib>=3.10.3",
+    "pandas>=2.3.1",
+    "polars>=1.31.0",
+    "qdrant-client>=1.14.3",
+    "redis>=6.2.0",
+    "sentence-transformers>=5.0.0",
+    "torchvision>=0.22.1",
+]
+
+[tool.uv]
+required-environments = [
+    "sys_platform == 'darwin' and platform_machine == 'arm64'"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
